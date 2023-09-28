@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    background-color: black;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #ffffff;
+}
+
+header{
+    background: url('../images/banner.jpeg');
+}
+header h1{
+    font-family: 'Comic Sans MS';
+    font-size: 2.5em;
+    font-weight: normal;
+    color: #000000;
+}
+#title{
+    display: inline-block;
+}
+#logo, header h1{
+    display: inline-block;
+    margin-bottom: 0px;
+    height: 140px;
+}
+
+/*Menú de navegación*/
+nav{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    background-color: rgb(88, 88, 88);
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 15px;
+}
+nav a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+    color: #ebebeb;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #f78d14;
+    border-bottom: 3px solid #568ef7;
+}
+
+/*Contenido de la página*/
+img{
+    height: 250px;
+}
+article{
+    padding: 10px;
+}
+section{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    width: 75%;
+}
+aside{
+    padding: 5px;
+    font-style: italic;
+    float: right;
+    width: 20%;
+    border: 2px solid;
+}
+
+/*Información desplegable*/
+.container{
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+.container h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+.infobox{
+    background-color: black;
+    text-align: justify;
+}
+.content{
+    font-size: 20px;
+}
+.infobox label{
+    display: block;
+    padding: 20px;
+    font-size: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+}
+.infobox label:hover{
+    background: #000;
+}
+.infobox .content{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btn-infobox1:checked ~ .content{
+    max-height: 600px;
+    padding: 15px 0px;
+}
+.btn-infobox1{
+    display: none;
+}
+
+/*Btn Saber más*/
+button{
+    margin-right: auto;
+    margin-left: auto;
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #00ddff
+    );
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+button span{
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+}
+button:hover span{
+    background: none;
+}
+button:active{
+    transform:scale(0.9);
+}
+.btn{
+    place-items: center;
+}
+
+/*Pie de página*/
+footer{
+    float: left;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    border-top: 2px solid #000;
+    background-color: #0665b3;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
